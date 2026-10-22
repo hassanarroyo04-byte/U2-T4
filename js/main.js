@@ -54,7 +54,7 @@ contactForm.addEventListener("submit", (event) => {
 
   document.getElementById("form-feedback").textContent =
     "Abriendo tu aplicación de correo con el mensaje preparado.";
-  window.location.href = `mailto:hola@nova.studio?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:hola@hachestudios.com?subject=${subject}&body=${body}`;
 });
 
 if (window.gsap && window.ScrollTrigger) {
