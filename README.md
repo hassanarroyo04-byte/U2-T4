@@ -17,4 +17,4 @@ Abre `index.html` en un navegador. La tipografía, los iconos y GSAP se cargan d
 
 Cada push a `main` ejecuta el flujo de `.github/workflows/pages.yml` y despliega el contenido en GitHub Pages. En la configuración del repositorio, la fuente de Pages debe estar configurada como **GitHub Actions**.
 
-La calculadora estima el precio inicial a razón de **$800 USD por página**. El formulario de contacto utiliza un enlace de correo y debe conectarse a un servicio de recepción de formularios si se necesita envío desde la página.
+La calculadora estima el precio inicial a razón de **$800 USD por página**. El formulario prepara un mensaje en el cliente de correo del visitante; para recibir envíos directamente desde la página, conéctalo a un servicio de formularios.

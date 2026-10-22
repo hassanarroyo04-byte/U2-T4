@@ -240,6 +240,32 @@
             <a class="button button-dark" href="mailto:hola@nova.studio?subject=Consulta%20sobre%20mi%20sitio%20web">Hablemos de tu proyecto <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
           </div>
         </div>
+        <div class="container">
+          <div class="contact-form-area" data-reveal>
+            <div class="contact-form-heading">
+              <p class="eyebrow"><span class="status-dot"></span> CUÉNTANOS UN POCO MÁS</p>
+              <h3>Empecemos por aquí.</h3>
+            </div>
+            <form class="contact-form" id="contact-form">
+              <div class="form-field">
+                <label for="contact-name">Tu nombre</label>
+                <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="¿Cómo te llamas?" required>
+              </div>
+              <div class="form-field">
+                <label for="contact-email">Tu correo</label>
+                <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="tu@correo.com" required>
+              </div>
+              <div class="form-field form-field-wide">
+                <label for="contact-message">Cuéntanos sobre tu proyecto</label>
+                <textarea id="contact-message" name="message" rows="4" placeholder="¿Qué te gustaría construir?" required></textarea>
+              </div>
+              <div class="form-submit-row">
+                <button class="button button-primary" type="submit">Preparar mensaje <i class="bi bi-arrow-up-right" aria-hidden="true"></i></button>
+                <p id="form-feedback" aria-live="polite">El envío abrirá tu aplicación de correo.</p>
+              </div>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
 

@@ -181,6 +181,20 @@ h1, h2, h3 { font-family: var(--font-display); }
 .calculator-footnote { margin: 7px 0 18px; color: #9097a0; font-size: 9px; }
 .button-dark { width: 100%; color: white; background: var(--navy); }
 .button-dark:hover { background: #263a55; }
+.contact-form-area { margin-top: 65px; padding: 31px; border: 1px solid rgba(255,255,255,.12); border-radius: 9px; background: rgba(255,255,255,.035); }
+.contact-form-heading { margin-bottom: 23px; }
+.contact-form-heading .eyebrow { margin-bottom: 9px; }
+.contact-form-heading h3 { margin: 0; font-size: 23px; letter-spacing: -.6px; }
+.contact-form { display: grid; grid-template-columns: repeat(2, 1fr); gap: 17px; }
+.form-field { display: flex; flex-direction: column; gap: 8px; }
+.form-field-wide { grid-column: 1 / -1; }
+.form-field label { color: rgba(255,255,255,.76); font-size: 10px; font-weight: 600; }
+.form-field input, .form-field textarea { width: 100%; padding: 12px 13px; border: 1px solid rgba(255,255,255,.14); border-radius: 5px; outline: 0; color: white; background: rgba(9,18,30,.38); font-size: 11px; }
+.form-field textarea { min-height: 105px; resize: vertical; }
+.form-field input::placeholder, .form-field textarea::placeholder { color: rgba(255,255,255,.35); }
+.form-field input:focus, .form-field textarea:focus { border-color: var(--lime); box-shadow: 0 0 0 3px rgba(192,242,116,.1); }
+.form-submit-row { grid-column: 1 / -1; display: flex; align-items: center; gap: 17px; }
+.form-submit-row p { margin: 0; color: rgba(255,255,255,.43); font-size: 9px; }
 .site-footer { color: rgba(255,255,255,.7); background: #0d1725; }
 .footer-main { min-height: 90px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,.1); }
 .footer-main > p { margin: 0; color: rgba(255,255,255,.47); font-size: 11px; }
@@ -254,6 +268,10 @@ h1, h2, h3 { font-family: var(--font-display); }
   .luma-copy strong { font-size: 26px; }
   .contact-layout { grid-template-columns: 1fr; gap: 35px; }
   .calculator-card { padding: 22px 19px; }
+  .contact-form-area { margin-top: 42px; padding: 22px 19px; }
+  .contact-form { grid-template-columns: 1fr; }
+  .form-field-wide, .form-submit-row { grid-column: auto; }
+  .form-submit-row { align-items: flex-start; flex-direction: column; gap: 10px; }
   .footer-main { min-height: 84px; }
   .footer-main > p { display: none; }
   .footer-bottom { min-height: 80px; flex-wrap: wrap; justify-content: space-between; gap: 9px; padding-top: 14px; padding-bottom: 14px; }

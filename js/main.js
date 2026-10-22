@@ -41,6 +41,22 @@ navLinks.querySelectorAll("a").forEach((link) => {
   });
 });
 
+const contactForm = document.getElementById("contact-form");
+
+contactForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const formData = new FormData(contactForm);
+  const name = formData.get("name").trim();
+  const email = formData.get("email").trim();
+  const message = formData.get("message").trim();
+  const subject = encodeURIComponent(`Consulta de proyecto — ${name}`);
+  const body = encodeURIComponent(`Nombre: ${name}\nCorreo: ${email}\n\nProyecto:\n${message}`);
+
+  document.getElementById("form-feedback").textContent =
+    "Abriendo tu aplicación de correo con el mensaje preparado.";
+  window.location.href = `mailto:hola@nova.studio?subject=${subject}&body=${body}`;
+});
+
 if (window.gsap && window.ScrollTrigger) {
   gsap.registerPlugin(ScrollTrigger);
 
